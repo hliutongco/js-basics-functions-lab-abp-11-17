@@ -7,5 +7,5 @@ function distanceFromHqInBlocks(number) {
 
 function distanceFromHqInFeet(number) {
   const feet=distanceFromHqInBlocks(number);
-  return feet*12;
+  return feet*264;
 }
