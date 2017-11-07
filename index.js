@@ -25,6 +25,6 @@ function calculatesFarePrice(starting,ending) {
     return fare*0.02
   }
   else if(fare>2000 && fare<2500){
-    return fare*25;
+    return 25;
   }
 }
