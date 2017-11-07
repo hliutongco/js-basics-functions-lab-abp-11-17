@@ -15,3 +15,13 @@ function distanceTravelledInFeet(starting,ending){
   (starting>ending) ? distance=starting-ending : distance=ending-starting;
   return distance*264;
 }
+
+function calculatesFarePrice(starting,ending) {
+  let fare=distanceTravelledInFeet(starting,ending);
+  switch(fare) {
+    case fare<400:
+    return 0;
+    case fare>400 && fare<2000:
+    return fare*2;
+  }
+}
