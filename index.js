@@ -4,3 +4,8 @@ function distanceFromHqInBlocks(number) {
   (number>42) ? blocks = number-42 : blocks = 42-number;
   return blocks;
 }
+
+function distanceFromHqInFeet(number) {
+  const feet=distanceFromHqInBlocks(number);
+  return feet*12;
+}
