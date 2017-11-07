@@ -1,4 +1,6 @@
 
-function distanceFromHqInBlocks() {
-  (number>42) ? return number-42 : return 42-number;
+function distanceFromHqInBlocks(number) {
+  let blocks;
+  (number>42) ? blocks = number-42 : blocks = 42-number;
+  return blocks;
 }
