@@ -9,3 +9,9 @@ function distanceFromHqInFeet(number) {
   const feet=distanceFromHqInBlocks(number);
   return feet*264;
 }
+
+function distanceTravelledInFeet(starting,ending){
+  let distance;
+  (starting>ending) ? distance=starting-ending : distance=ending-starting;
+  return distance*264;
+}
