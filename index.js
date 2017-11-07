@@ -17,8 +17,7 @@ function distanceTravelledInFeet(starting,ending){
 }
 
 function calculatesFarePrice(starting,ending) {
-  let fare=distanceTravelledInFeet(starting,ending);
-  switch(fare) {
+  switch(distanceTravelledInFeet(starting,ending)) {
     case fare<400:
     return 0;
     case fare>400 && fare<2000:
